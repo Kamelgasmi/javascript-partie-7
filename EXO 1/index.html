@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="FR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initialscale=1.0"/>
+        <title>EXO 1 PARTIE 7 JAVASCRIPT</title>
+    </head>
+    <body>
+         <form>
+            <ol>
+                <li><label for="n1">Nombre 1 :</label><input class="active" type="text" name="firstNumber" id="number1"/></li>
+                <li><label for="n2">Nombre 2 :</label><input class="active" type="text" name="secondNumber" id="number2"/></li>
+            </ol>
+            <button type="button" id="button" onclick="produit()" value="produit" >Calculer</button>
+        </form>
+        <p>Résultat : <br>
+            <span id="result"></span>
+        <script>
+            function produit() { 
+                var num1 = document.getElementById('number1').value;
+                var num2 = document.getElementById('number2').value;
+                var resultat = function(num1 , num2){
+                    return num1 * num2
+                }
+                document.getElementById('result').innerHTML = num1 * num2;       
+            }
+        </script>
+    </body>
+</html>

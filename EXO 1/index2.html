@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>partie 7 exercice 1</title>
+    <style>
+        ol {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <ol>
+            <li><input type="number" id="number1"></li>
+            <li>X</li>
+            <li><input type="number" id="number2"></li>
+            <li><button type="button" id="resulat" name="resultat" onclick="multiplication(number1.value, number2.value)">Résultat</button></li>
+            <li><p id="resultat"></p></li>
+        </ol>
+    </form>
+    <script>
+        function multiplication(nb1, nb2) {
+            nb1 = Number(nb1);
+            nb2 = Number(nb2);
+            var result = nb1 * nb2;
+            document.getElementById('resultat').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
